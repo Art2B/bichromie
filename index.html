@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bichromie</title>
+</head>
+<body>
+  <style>
+    body { background: #A9A8A9; }
+  </style>
+  <canvas id="canvas" height=500 width=500></canvas>
+  <form>
+    <label for="brightness">Brightness:</label>
+    <input type="number" name="brightness" id="brightness" value="130">
+    <label for="contrast">Contrast:</label>
+    <input type="number" name="contrast" id="contrast" value="100">
+    <label for="invert">Invert:</label>
+    <input type="number" name="invert" id="invert" value="0">
+    <label for="saturate">Saturate:</label>
+    <input type="number" name="saturate" id="saturate" value="100">
+    <label for="sepia">Sepia:</label>
+    <input type="number" name="sepia" id="sepia" value="0">
+    <label for="color">Color:</label>
+    <select name="color" id="color">
+      <option value="#A9A8A9" selected>#A9A8A9</option>
+      <option value="#FF4611">#FF4611</option>
+      <option value="#3A5CAC">#3A5CAC</option>
+      <option value="#8CB7E8">#8CB7E8</option>
+      <option value="#FFB718">#FFB718</option>
+      <option value="#DC0031">#DC0031</option>
+      <option value="#00ADBB">#00ADBB</option>
+      <option value="#B5A268">#B5A268</option>
+      <option value="#7B6568">#7B6568</option>
+    </select>
+  </form>
+  <a id="export">Export image</a>
+  <script src="sketch.js"></script>
+</body>
+</html>
